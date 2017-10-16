@@ -1,0 +1,13 @@
+$color-drop-shadow: rgba(0, 0, 0, .4);
+
+.drop-shadow {
+  bottom: -6px;
+  box-shadow: inset 0 5px 6px -3px $color-drop-shadow;
+  height: 6px;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

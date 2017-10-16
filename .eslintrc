@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "comma-dangle": 0,
+    "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
+    "max-len": [2, 100, 2],
+    "prefer-rest-params": 0
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ]
+}

@@ -1,0 +1,64 @@
+@import 'dropshadow';
+@import 'spinkit';
+@import 'threedots';
+
+html,
+body,
+.bnv {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+a {
+  outline: 0;
+}
+
+a,
+button {
+  &.hover-blue:focus {
+    color: inherit;
+  }
+}
+
+.banner__title__icon {
+  filter: grayscale(1);
+  height: 3rem;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.scenario__saving {
+  width: 2rem;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+// tachyon extensions
+.h-10 {
+  height: 10%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.w-05 {
+  width: 5%;
+}
+
+.w-95 {
+  width: 95%;
+}

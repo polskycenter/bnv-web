@@ -1,0 +1,98 @@
+{
+  "private": true,
+  "name": "@polskycenter/bnv-web",
+  "description": "Building the New Venture Calculators - Web client",
+  "version": "0.0.0",
+  "license": "ISC",
+  "author": {
+    "name": "Polsky Center for Entrepreneurship and Innovation",
+    "url": "https://github.com/polskycenter"
+  },
+  "contributors": [
+    {
+      "name": "Kurt Ericson",
+      "email": "github@kurttheviking.com",
+      "url": "https://github.com/kurttheviking"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polskycenter/bnv-web"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": "6"
+  },
+  "dependencies": {
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.24.1",
+    "babelify": "7.3.0",
+    "body-parser": "1.18.2",
+    "browserify": "14.4.0",
+    "classnames": "2.2.5",
+    "cookie-parser": "1.4.3",
+    "cors": "2.8.4",
+    "csrf": "3.0.6",
+    "debug": "3.1.0",
+    "ejs": "2.5.7",
+    "envify": "4.1.0",
+    "express-http-proxy": "1.0.7",
+    "express-minify-html": "0.11.4",
+    "express": "4.16.2",
+    "flux": "3.1.3",
+    "habrok": "2.1.0",
+    "has": "1.0.1",
+    "helmet": "3.9.0",
+    "middle-pinger": "1.0.0",
+    "moment": "2.19.1",
+    "morgan": "1.9.0",
+    "object.values": "1.0.4",
+    "path-parser": "2.0.2",
+    "progressbar.js": "1.0.1",
+    "promise-polyfill": "6.0.2",
+    "prop-types": "15.6.0",
+    "query-string": "5.0.0",
+    "react-dom": "16.0.0",
+    "react-feather": "1.0.7",
+    "react": "16.0.0",
+    "require-directory": "2.1.1",
+    "serve-favicon": "2.4.5",
+    "stapes": "1.0.0",
+    "uglifyify": "4.0.4",
+    "walk": "2.3.9",
+    "xhr": "2.4.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-config-react": "1.1.7",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.4.0",
+    "eslint": "4.6.1",
+    "istanbul": "0.4.5",
+    "mocha-eslint": "4.1.0",
+    "mocha": "3.5.3",
+    "nodemon": "1.12.1",
+    "watchify": "3.9.0"
+  },
+  "scripts": {
+    "build": "sh ./tools/build.sh",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover --report=json-summary --report=html _mocha ./test -- --recursive",
+    "dev": "DEBUG=@polskycenter* sh ./tools/dev.sh",
+    "test": "node node_modules/mocha/bin/mocha ./test --recursive"
+  },
+  "browserify": {
+    "transform": [
+      "envify",
+      [
+        "babelify",
+        {
+          "presets": [
+            "env",
+            "react"
+          ]
+        }
+      ]
+    ]
+  }
+}
