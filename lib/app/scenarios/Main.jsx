@@ -92,8 +92,8 @@ class Scenarios extends React.Component {
             <WarningIcon size={64} />
           </div>
           <p className="center ma0 measure pt3 red tc">
-            This scenario does not exist or was removed.
-            Please choose a different account.
+            This calculator does not exist or was removed.
+            Please choose a different calculator.
           </p>
         </div>
       );
