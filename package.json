@@ -2,7 +2,7 @@
   "private": true,
   "name": "@polskycenter/bnv-web",
   "description": "Building the New Venture Calculators - Web client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "ISC",
   "author": {
     "name": "Polsky Center for Entrepreneurship and Innovation",
