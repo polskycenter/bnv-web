@@ -8,9 +8,9 @@ Building the New Venture Calculators: Web interface and scoring engines
 
 ### Prerequisites
 
-- [Node.js 6.x](https://nodejs.org/en/download/)
+- [Node.js 14.x+](https://nodejs.org/en/download/)
 - [Sass 3.5+](http://sass-lang.com/install)
-- A running [BNV API](https://github.com/polskycenter/bnv-web) instance
+- A running [BNV API](https://github.com/polskycenter/bnv-api) instance
 
 ### Install
 
